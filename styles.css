@@ -32,17 +32,39 @@ main {
     background: #f4f4f4;
 }
 
+.product-section {
+    margin: 20px 0;
+}
+
+.product-list {
+    display: block; /* Initially hidden */
+    flex-wrap: wrap; /* Allow wrapping for two columns */
+    max-height: 0; /* Start with no height */
+    overflow: hidden; /* Hide overflow for transition effect */
+    transition: max-height 0.9s ease-out; /* Smooth transition */
+}
+
+.product-list.active {
+    max-height: 500px; /* Set a maximum height for the transition when active */
+}
+
 .product {
     background: #fff;
-    margin: 20px 0;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Two columns, adjusted for margin */
 }
 
 .product img {
     max-width: 100%;
     height: auto;
+}
+
+.toggle {
+    cursor: pointer;
+    color: #007BFF; /* Clickable effect */
 }
 
 footer {
