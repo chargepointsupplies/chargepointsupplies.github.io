@@ -3,14 +3,14 @@ import Link from 'next/link';
 
 const nav = [
     { href: "/", name: "Home" },
-    { href: "/Menu", name: "Menu" },
-    { href: "/services", name: "Services" },
+    { href: "/menu", name: "Menu" },
+    { href: "/our-services", name: "Services" },
 ];
 
 const NavLinks: React.FC = () => {
     return (
 
-        <ul className='flex flex-row px-6 py-4 items-center justify-center gap-8'>
+        <ul className='flex flex-row px-6 py-4 items-center justify-center gap-10 text-black'>
             {nav.map((nav, index) => (
             <li key={index}>
                 <Link href={nav.href}>{nav.name}</Link>
