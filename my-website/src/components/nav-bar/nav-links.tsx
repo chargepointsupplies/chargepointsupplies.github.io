@@ -5,7 +5,6 @@ const nav = [
     { href: "/", name: "Home" },
     { href: "/Menu", name: "Menu" },
     { href: "/services", name: "Services" },
-    { href: "/contact", name: "Contact Us" }
 ];
 
 const NavLinks: React.FC = () => {
