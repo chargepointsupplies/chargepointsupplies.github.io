@@ -1,7 +1,7 @@
 import React from "react";
 import "./globals.css";
-import NavBar from "@/components/nav-bar/index";
-import Footer from "@/components/footer/index";
+import NavBar from "../components/nav-bar";
+import Footer from "../components/footer";
 
 export const metadata = {
   title: "Para Fabian <3",
@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
       <body className="bg-green-500 font-sans">
       
 
-        <NavBar/>
+        <NavBar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
