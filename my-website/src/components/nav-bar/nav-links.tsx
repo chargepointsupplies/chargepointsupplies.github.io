@@ -11,11 +11,13 @@ const nav = [
 const NavLinks: React.FC = () => {
     return (
 
-        <div className='flex flex-row px-6 py-4 items-center justify-center'>
+        <ul className='flex flex-row px-6 py-4 items-center justify-center gap-8'>
             {nav.map((nav, index) => (
-                <Link key={index} href={nav.href}>{nav.name}</Link>
+            <li key={index}>
+                <Link href={nav.href}>{nav.name}</Link>
+            </li>
             ))}
-        </div>
+        </ul>
         
     );
 };
