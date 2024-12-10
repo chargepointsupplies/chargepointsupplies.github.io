@@ -1,6 +1,6 @@
 # Project Name
 
-Welcome to the **Project Name** repository! Follow the steps below to set up and run the project locally.
+Welcome to the **Chargepoint** repository! Follow the steps below to set up and run the project locally.
 
 ---
 
